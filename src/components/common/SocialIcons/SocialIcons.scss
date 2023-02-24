@@ -1,0 +1,12 @@
+.social_icons {
+    display: flex;
+    gap: 1.25rem;
+    a {
+        color: #a1a0a0;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
