@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import './Navbar.scss'
-import { animate, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { HiMenuAlt4, HiX } from 'react-icons/hi'
 import { navLinks } from '../../Data'
-import { socialIcons } from '../../Data'
 import SocialIcons from '../common/SocialIcons/SocialIcons'
 const Navbar = () => {
     const [scroll, setScroll] = useState(false)

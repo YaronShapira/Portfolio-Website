@@ -6,7 +6,7 @@ export default function SocialIcons() {
         <div className='social_icons'>
             {socialIcons.map((socialIcon, index) => {
                 return (
-                    <a key={index} href={socialIcon.link} target='_blank'>
+                    <a key={index} href={socialIcon.link} target='_blank' rel='noreferrer'>
                         {socialIcon.icon}
                     </a>
                 )

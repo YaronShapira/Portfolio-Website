@@ -2,7 +2,6 @@ import {
     FaNodeJs,
     FaReact,
     FaSass,
-    FaPhoneAlt,
     FaUser,
     FaMapMarkerAlt,
     FaPaperPlane,
