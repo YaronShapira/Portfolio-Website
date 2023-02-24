@@ -57,7 +57,7 @@ const Portfolio = () => {
                 {works.map(work => {
                     return (
                         <div className='workImage' key={work.id}>
-                            <a href={work.demo}>
+                            <a href={work.demo} target='_blank' rel='noreferrer'>
                                 <img src={work.img} alt='workImg' />
                             </a>
 
