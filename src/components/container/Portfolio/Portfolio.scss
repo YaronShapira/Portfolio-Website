@@ -37,6 +37,15 @@
             }
         }
 
+        a {
+            transition: transform 0.3s ease;
+            font-size: 0;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
         @media screen and(max-width: 800px) {
             display: flex;
             flex-direction: column;

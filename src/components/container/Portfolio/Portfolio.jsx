@@ -57,7 +57,10 @@ const Portfolio = () => {
                 {works.map(work => {
                     return (
                         <div className='workImage' key={work.id}>
-                            <img src={work.img} alt='workImg' />
+                            <a href={work.demo}>
+                                <img src={work.img} alt='workImg' />
+                            </a>
+
                             <div className='col'>
                                 <h3>{work.title}</h3>
                                 <p>{work.data1}</p>

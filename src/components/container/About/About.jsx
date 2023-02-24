@@ -49,13 +49,13 @@ const About = () => {
                         )
                     })}
                     <motion.a
-                        href='#'
-                        download=''
+                        target='_blank'
+                        href='https://drive.google.com/file/d/1VQehbhAshRAEHN9S9IfdMj-4xUtjbXsO/view?usp=sharing'
                         whileHover={{ scale: 1.1 }}
                         transition={{ duration: 0.3 }}
                         className='download'
                     >
-                        Download Resume
+                        View My Resume
                     </motion.a>
                 </motion.div>
             </div>

@@ -110,7 +110,7 @@ export const workImages = [
         data1: 'Designed and developed a full-stack website clone of Airbnb using the MERN stack. The platform includes a wide range of features such as search, filter, and booking capabilities, which were designed and implemented with the utmost attention to detail and usability.',
         data2: 'Utilized React.js, Redux, Typescript, Node.js, MongoDB, Express.js, SASS, REST, MVC and Git to build the platform.',
         github: 'https://github.com/YaronShapira/Airbnb-Frontend',
-        demo: 'https://github.com/YaronShapira/Airbnb-Frontend',
+        demo: 'https://yaronshapira.github.io/Airbnb-Frontend/',
     },
     {
         id: 2,
