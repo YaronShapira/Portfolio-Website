@@ -11,7 +11,7 @@ const Contact = () => {
                 <span>get in touch</span>
                 <h1>Contact Me</h1>
             </motion.div>
-            <div className='contact_form'>
+            <form className='contact_form' action='https://formspree.io/f/xnqllqky' method='POST'>
                 <motion.div
                     initial={{ x: 0, opacity: 0 }}
                     whileInView={{ x: [-150, 0], opacity: 1 }}
@@ -49,17 +49,16 @@ const Contact = () => {
                         <input type='text' placeholder='Last name' />
                     </div>
                     <div className='row'>
-                        <input type='text' placeholder='Phone' />
-                        <input type='email' placeholder='Email' />
+                        <input type='email' placeholder='Email' name='email' />
                     </div>
                     <div className='row'>
-                        <textarea placeholder='message'></textarea>
+                        <textarea placeholder='message' name='message'></textarea>
                     </div>
                     <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }} className='btn'>
-                        <a href='#'>Send</a>
+                        <button type='submit'>Send</button>
                     </motion.div>
                 </motion.div>
-            </div>
+            </form>
         </div>
     )
 }

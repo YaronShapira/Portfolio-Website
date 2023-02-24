@@ -49,6 +49,10 @@
             display: flex;
             margin-top: auto;
 
+            @media screen and(max-width:700px) {
+                margin-top: 2rem;
+            }
+
             div {
                 margin-right: 1rem;
                 cursor: pointer;
@@ -64,6 +68,8 @@
         }
     }
     .contact_right {
+        display: flex;
+        flex-direction: column;
         h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
@@ -103,15 +109,20 @@
         .btn {
             margin-top: 1rem;
             background: #8c12f0;
-            padding: 0.65rem 1rem;
+            padding: 0.5rem 1.6rem;
             border-radius: 10px;
             font-size: 0.85rem;
-            width: 4.2rem;
+            // width: 4.2rem;
+            align-self: flex-start;
+            justify-self: flex-start;
         }
-        a {
+        button {
             text-decoration: none;
+            background: #8c12f0;
             color: #f5f5f5;
             text-transform: capitalize;
+            // border-left: none;
+            border: none;
         }
     }
 }

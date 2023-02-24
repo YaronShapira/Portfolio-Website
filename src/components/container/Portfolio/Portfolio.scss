@@ -30,19 +30,30 @@
     // grid-template-columns: repeat(3,1fr);
     gap: 1rem;
 
-    @media screen and(max-width: 800px) {
-        // grid-template-columns: repeat(2,1fr);
-    }
-
-    @media screen and(max-width: 600px) {
-        // grid-template-columns: 1fr;
-    }
-
     .workImage {
         &:nth-child(2n) {
             .col {
                 order: -1;
             }
+        }
+
+        @media screen and(max-width: 800px) {
+            display: flex;
+            flex-direction: column;
+            padding: 4rem;
+
+            &:nth-child(2n) {
+                .col {
+                    order: unset;
+                }
+            }
+
+            .btns {
+                margin-top: 2rem !important;
+            }
+        }
+        @media screen and(max-width: 600px) {
+            padding: 0rem;
         }
         display: grid;
         grid-template-columns: 1fr 1fr;
