@@ -1,30 +1,24 @@
 import {
-    FaHtml5,
-    FaCss3,
     FaNodeJs,
     FaReact,
     FaSass,
-    FaFigma,
     FaPhoneAlt,
     FaUser,
     FaMapMarkerAlt,
     FaPaperPlane,
-    FaDribbble,
-    FaInstagram,
     FaLinkedin,
     FaGithub,
+    FaPython,
     FaEnvelope,
 } from 'react-icons/fa'
-import { DiJavascript } from 'react-icons/di'
+import { SiMongodb, SiRedux } from 'react-icons/si'
+import { DiGitBranch } from 'react-icons/di'
 import { SiTypescript } from 'react-icons/si'
-import { BsMedium } from 'react-icons/bs'
-import portfolio from './assets/portfolio.jpg'
+import { BsPencil } from 'react-icons/bs'
 import work1 from './assets/work1.png'
 import work2 from './assets/work2.png'
 import work3 from './assets/work3.png'
 import work4 from './assets/work4.png'
-import work5 from './assets/work5.png'
-import work6 from './assets/work6.png'
 
 export const navLinks = ['home', 'about', 'skills', 'portfolio', 'contact']
 
@@ -39,130 +33,134 @@ export const bios = [
         id: 1,
         icon: <FaUser />,
         key: 'Name',
-        value: 'Abeezarar',
+        value: 'Yaron Shapira',
     },
     {
         id: 2,
-        icon: <FaPhoneAlt />,
-        key: 'Phone',
-        value: '+959883271929',
+        icon: <FaPaperPlane />,
+        key: 'Email',
+        value: 'yaronshapiradev@gmail.com',
     },
     {
         id: 3,
-        icon: <FaPaperPlane />,
-        key: 'Email',
-        value: 'abee02@gmail.com',
+        icon: <FaMapMarkerAlt />,
+        key: 'Location',
+        value: 'Netanya, Israel',
     },
 ]
 
 export const icons = [
-    <FaHtml5 />,
-    <FaCss3 />,
-    <DiJavascript />,
-    <SiTypescript />,
-    <FaReact />,
+    <SiMongodb />,
     <FaNodeJs />,
+    <FaReact />,
+    <SiRedux />,
     <FaSass />,
-    <FaFigma />,
+    <FaPython />,
+    <SiTypescript />,
+    <DiGitBranch />,
 ]
 
-export const experiences = [
-    {
-        id: 1,
-        year: '2022',
-        position: 'Senior Web Developer',
-        company: 'shop.com.mm',
-    },
-    {
-        di: 2,
-        year: '2021',
-        position: 'Junior Web Developer',
-        company: 'shop.com.mm',
-    },
-    {
-        id: 3,
-        year: '2019',
-        position: 'Intern Web Dveloper',
-        company: 'shop.com.mm',
-    },
-]
-export const finishes = [
-    {
-        id: 1,
-        number: '6+',
-        itemName: 'Years Of Experience',
-    },
-    {
-        id: 2,
-        number: '150+',
-        itemName: 'Satisfied Customers',
-    },
-    {
-        id: 3,
-        number: '669+',
-        itemName: 'Designed Items',
-    },
-    {
-        id: 4,
-        number: '117+',
-        itemName: 'Clients Served',
-    },
-]
+// export const experiences = [
+//     {
+//         id: 1,
+//         year: '2022',
+//         position: 'Senior Web Developer',
+//         company: 'shop.com.mm',
+//     },
+//     {
+//         di: 2,
+//         year: '2021',
+//         position: 'Junior Web Developer',
+//         company: 'shop.com.mm',
+//     },
+//     {
+//         id: 3,
+//         year: '2019',
+//         position: 'Intern Web Dveloper',
+//         company: 'shop.com.mm',
+//     },
+// ]
+// export const finishes = [
+//     {
+//         id: 1,
+//         number: '6+',
+//         itemName: 'Years Of Experience',
+//     },
+//     {
+//         id: 2,
+//         number: '150+',
+//         itemName: 'Satisfied Customers',
+//     },
+//     {
+//         id: 3,
+//         number: '669+',
+//         itemName: 'Designed Items',
+//     },
+//     {
+//         id: 4,
+//         number: '117+',
+//         itemName: 'Clients Served',
+//     },
+// ]
 export const workImages = [
     {
         id: 1,
         img: work1,
         name: 'project 1',
-        category: 'web',
+        title: 'Airbnb Clone',
+        data1: 'Designed and developed a full-stack website clone of Airbnb using the MERN stack. The platform includes a wide range of features such as search, filter, and booking capabilities, which were designed and implemented with the utmost attention to detail and usability.',
+        data2: 'Utilized React.js, Redux, Typescript, Node.js, MongoDB, Express.js, SASS, REST, MVC and Git to build the platform.',
+        github: 'https://github.com/YaronShapira/Airbnb-Frontend',
+        demo: 'https://github.com/YaronShapira/Airbnb-Frontend',
     },
     {
         id: 2,
         img: work2,
         name: 'project 2',
-        category: 'web',
+        title: 'Editor quix (Wix clone)',
+        data1: 'Designed and developed a full-stack website builder platform clone of Editor quix using the MERN stack. The platform includes smart components, real-time statistics, live chat, email management, lead organization, and meeting scheduling capabilities.',
+        data2: 'Utilized React.js, Redux, JavaScript, Node.js, MongoDB, Express.js, Socket.io, SASS, REST, MVC, and Git to build the platform.',
+        github: 'https://github.com/YaronShapira/Editor-quix-code',
+        demo: 'https://www.editorquix.com/',
     },
     {
         id: 3,
         img: work3,
         name: 'project 3',
-        category: 'web',
+        title: 'Google Keep Clone',
+        data1: 'Designed and developed a full-stack web application clone of Google Keep using React.js. The platform includes a range of note-taking capabilities such as map notes, list notes, recordings, audio, videos, canvas, and images.',
+        data2: 'Utilized React.js and Git to build the platform.',
+        github: 'https://github.com/YaronShapira/appsus',
+        demo: 'https://yaronshapira.github.io/appsus/#/note?q=',
     },
     {
         id: 4,
         img: work4,
         name: 'project 4',
-        category: 'app',
-    },
-    {
-        id: 5,
-        img: work5,
-        name: 'project 5',
-        category: 'app',
-    },
-    {
-        id: 6,
-        img: work6,
-        name: 'project 6',
-        category: 'design',
+        title: 'Meme Generator',
+        data1: 'Designed and developed a meme generator web application, utilizing vanilla JavaScript, CSS, and HTML. The platform features a user-friendly interface with drag-and-drop functionality, beautiful UX/UI design, and support for both Hebrew and English languages.',
+        data2: 'Utilized HTML, CSS & vanilla Javascript.',
+        github: 'https://github.com/YaronShapira/MemeGenerator',
+        demo: 'https://yaronshapira.github.io/MemeGenerator/',
     },
 ]
 
-export const workNavs = ['All', 'Web', 'App', 'Design']
+// export const workNavs = ['All', 'Web', 'App', 'Design']
 
 export const contacts = [
     {
         id: 1,
         icon: <FaMapMarkerAlt />,
-        infoText: '16 Road, TharKayTa , Yangon',
+        infoText: 'Netanya, Israel',
     },
     {
         id: 2,
         icon: <FaPaperPlane />,
-        infoText: 'abee02@gmail.com',
+        infoText: 'yaronshapiradev@gmail.com',
     },
     {
         id: 3,
-        icon: <FaPhoneAlt />,
-        infoText: '+959-883-271-929',
+        icon: <BsPencil />,
+        infoText: 'Sweatygaming.com',
     },
 ]

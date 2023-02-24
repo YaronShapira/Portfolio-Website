@@ -5,7 +5,6 @@ import { HiMenuAlt4, HiX } from 'react-icons/hi'
 import { navLinks } from '../../Data'
 import { socialIcons } from '../../Data'
 import SocialIcons from '../common/SocialIcons/SocialIcons'
-import logo from '../../assets/logo.png'
 const Navbar = () => {
     const [scroll, setScroll] = useState(false)
     const [toggle, setToggle] = useState(false)

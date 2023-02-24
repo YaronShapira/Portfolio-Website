@@ -16,7 +16,7 @@ const Skills = () => {
         <span>What I Expert?</span>
         <h1>Skills And Experience</h1>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         initial={{opacity: 0}}
         whileInView={{y: [-50, 0], opacity: 1}}
         className="select"
@@ -28,7 +28,7 @@ const Skills = () => {
           onClick={() => setActive(2)}
           className={active === 2 ? "active" : ""}
         >Experiences</button>
-      </motion.div>
+      </motion.div> */}
       <motion.div
         initial={{opacity: 0}}
         whileInView={{y: [-50, 0], opacity: 1}}
@@ -42,7 +42,7 @@ const Skills = () => {
           )
         })}
       </motion.div>
-      <motion.div
+      {/* <motion.div
         initial={{opacity: 0}}
         whileInView={{y: [-50, 0], opacity: 1}}
         className="experiencs"
@@ -58,8 +58,8 @@ const Skills = () => {
             </div>
           )
         })}
-        </motion.div>
-      <motion.div
+        </motion.div> */}
+      {/* <motion.div
         initial={{opacity: 0}}
         whileInView={{y: [-50, 0], opacity: 1}}
         className="finishes_container"
@@ -72,7 +72,7 @@ const Skills = () => {
           </div>
           )
         })}
-      </motion.div>
+      </motion.div> */}
     </div>
   )
 }

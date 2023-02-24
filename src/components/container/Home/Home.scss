@@ -4,8 +4,8 @@
     align-items: center;
 
     .profile {
-        width: 110px;
-        height: 110px;
+        width: 120px;
+        height: 120px;
 
         img {
             width: 100%;
@@ -45,32 +45,32 @@
 
             @media screen and (max-width: 800px) {
                 font-size: 3.5rem;
-                 margin-top: 2rem;
+                margin-top: 2rem;
             }
             @media screen and(max-width: 530px) {
                 font-size: 2.5rem;
             }
         }
-                a {
-                    margin-top: 3rem;
-                    text-decoration: none;
-                    color: #000;
-                    background: #f5f5f5;
-                    padding: 0.65rem 1rem;
-                    border-radius: 10px;
-                    font-size: 0.85rem;
-                    text-transform: capitalize;
-                }
-        div{
+        a {
+            margin-top: 3rem;
+            text-decoration: none;
+            color: #000;
+            background: #f5f5f5;
+            padding: 0.65rem 1rem;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            text-transform: capitalize;
+        }
+        div {
             position: absolute;
-            background: rgba(255,255,255,0.15);
+            background: rgba(255, 255, 255, 0.15);
             color: #f5f5f5;
             padding: 0.35rem 1rem;
             border-radius: 25px;
             font-size: 0.85rem;
             cursor: pointer;
         }
-        @media screen  and (max-width: 800px) {
+        @media screen and (max-width: 800px) {
             div {
                 display: none;
             }
@@ -88,5 +88,4 @@
             left: 0;
         }
     }
-
 }

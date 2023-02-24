@@ -20,9 +20,8 @@ const Contact = () => {
                 >
                     <h3>Just Say Hi</h3>
                     <p className='contact_text'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nihil unde atque voluptates,
-                        cumque molestias eveniet voluptatum animi consectetur magni mollitia dolor exercitationem labore
-                        maiores!
+                        Let's connect and make something amazing together! I'm always open to exploring new
+                        opportunities and expanding my horizons.
                     </p>
                     {contacts.map(contact => {
                         return (
