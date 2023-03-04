@@ -107,7 +107,7 @@ export const workImages = [
         img: work1,
         name: 'project 1',
         title: 'Airbnb Clone',
-        data1: 'Designed and developed a full-stack website clone of Airbnb using the MERN stack. The platform includes a wide range of features such as search, filter, booking capabilities, map search, which were designed and implemented with the utmost attention to detail and usability.',
+        data1: 'Designed and developed a full-stack website clone of Airbnb using React with Typescript. The platform includes a wide range of features such as search, filter, booking capabilities, map search, which were designed and implemented with the utmost attention to detail and usability.',
         data2: 'Utilized React.js, Redux, Typescript, SASS, and Git to build the platform.',
         github: 'https://github.com/YaronShapira/Airbnb-Frontend',
         demo: 'https://airbnb-in-react.netlify.app/',
