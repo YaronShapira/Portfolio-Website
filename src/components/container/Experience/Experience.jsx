@@ -1,21 +1,21 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
-import './Portfolio.scss';
+// import './Experience.scss';
 import { workNavs } from '../../../Data';
-import { portfolio } from '../../../Data';
+import { experiences } from '../../../Data';
 import { FiGithub, FiEye } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 
-const Portfolio = () => {
+const Experience = () => {
   const [tab, setTab] = useState({ name: 'all' });
   const [works, setWorks] = useState([]);
   const [active, setActive] = useState(0);
 
   useEffect(() => {
     if (tab.name === 'all') {
-      setWorks(portfolio);
+      setWorks(experiences);
     } else {
-      const newWork = portfolio.filter((workImage) => {
+      const newWork = experiences.filter((workImage) => {
         return workImage.category.toLowerCase() === tab.name;
       });
       setWorks(newWork);
@@ -31,7 +31,7 @@ const Portfolio = () => {
     <div className='container' id='portfolio'>
       <motion.div initial={{ opacity: 0 }} whileInView={{ y: [-50, 0], opacity: 1 }} className='title'>
         <span>My Work</span>
-        <h1>Awesome Projects</h1>
+        <h1>My Experience</h1>
       </motion.div>
       {/* <motion.div
         initial={{opacity: 0}}
@@ -50,22 +50,27 @@ const Portfolio = () => {
       <motion.div initial={{ x: 0, opacity: 0 }} whileInView={{ x: [-250, 0], opacity: 1 }} transition={{ duration: 1 }} exit={{ opacity: 0, y: -50 }} className='workImages'>
         {works.map((work) => {
           return (
-            <div className='workImage' key={work.id}>
-              <a href={work.demo} target='_blank' rel='noreferrer'>
+            <div className='workImage' key={work.id} style={{ width: '800px', justifyContent: 'center' }}>
+              {/* <a href={work.demo} target='_blank' rel='noreferrer'>
                 <img src={work.img} alt='workImg' />
-              </a>
+              </a> */}
+              <h3 style={{ fontWeight: '400', fontSize: '22px', justifySelf: 'flex-end', marginTop: '6px' }}>{work.subTitle}</h3>
 
-              <div className='col'>
+              <div className='col' style={{ justifyContent: 'center' }}>
                 <h3>{work.title}</h3>
                 <p>{work.data1}</p>
                 <p>{work.data2}</p>
                 <div className='btns'>
-                  <a href={work.demo} target='_blank' rel='noreferrer'>
-                    Live Demo
-                  </a>
-                  <a href={work.github} target='_blank' rel='noreferrer'>
-                    Github Code
-                  </a>
+                  {work.demo && (
+                    <a href={work.demo} target='_blank' rel='noreferrer'>
+                      Live Demo
+                    </a>
+                  )}
+                  {work.github && (
+                    <a href={work.github} target='_blank' rel='noreferrer'>
+                      Github Code
+                    </a>
+                  )}
                 </div>
               </div>
               {/* <motion.div
@@ -118,4 +123,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Experience;

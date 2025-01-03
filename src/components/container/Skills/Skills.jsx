@@ -1,17 +1,17 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react'
-import './Skills.scss'
-import { icons } from '../../../Data'
-import { motion } from 'framer-motion'
+import React, { useState } from 'react';
+import './Skills.scss';
+import { icons } from '../../../Data';
+import { motion } from 'framer-motion';
 const Skills = () => {
-    const [active, setActive] = useState(1)
-    return (
-        <div className='container' id='skills'>
-            <motion.div initial={{ opacity: 0 }} whileInView={{ y: [-50, 0], opacity: 1 }} className='title'>
-                <span>What I Expert?</span>
-                <h1>Skills And Experience</h1>
-            </motion.div>
-            {/* <motion.div
+  const [active, setActive] = useState(1);
+  return (
+    <div className='container' id='skills'>
+      <motion.div initial={{ opacity: 0 }} whileInView={{ y: [-50, 0], opacity: 1 }} className='title'>
+        <span>What I Expert?</span>
+        <h1>Skills</h1>
+      </motion.div>
+      {/* <motion.div
         initial={{opacity: 0}}
         whileInView={{y: [-50, 0], opacity: 1}}
         className="select"
@@ -24,17 +24,17 @@ const Skills = () => {
           className={active === 2 ? "active" : ""}
         >Experiences</button>
       </motion.div> */}
-            <motion.div initial={{ opacity: 0 }} whileInView={{ y: [-50, 0], opacity: 1 }} className='skills'>
-                {active === 1 &&
-                    icons.map((icon, index) => {
-                        return (
-                            <div key={index} className='tools'>
-                                {icon}
-                            </div>
-                        )
-                    })}
-            </motion.div>
-            {/* <motion.div
+      <motion.div initial={{ opacity: 0 }} whileInView={{ y: [-50, 0], opacity: 1 }} className='skills'>
+        {active === 1 &&
+          icons.map((icon, index) => {
+            return (
+              <div key={index} className='tools'>
+                {icon}
+              </div>
+            );
+          })}
+      </motion.div>
+      {/* <motion.div
         initial={{opacity: 0}}
         whileInView={{y: [-50, 0], opacity: 1}}
         className="experiencs"
@@ -51,7 +51,7 @@ const Skills = () => {
           )
         })}
         </motion.div> */}
-            {/* <motion.div
+      {/* <motion.div
         initial={{opacity: 0}}
         whileInView={{y: [-50, 0], opacity: 1}}
         className="finishes_container"
@@ -65,8 +65,8 @@ const Skills = () => {
           )
         })}
       </motion.div> */}
-        </div>
-    )
-}
+    </div>
+  );
+};
 
-export default Skills
+export default Skills;
