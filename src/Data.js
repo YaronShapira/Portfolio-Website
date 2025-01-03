@@ -5,8 +5,8 @@ import { SiTypescript } from 'react-icons/si';
 import { BsPencil } from 'react-icons/bs';
 import work1 from './assets/work1.png';
 import work2 from './assets/work2.png';
-import work3 from './assets/work3.png';
-import work4 from './assets/work4.png';
+// import work3 from './assets/work3.png';
+// import work4 from './assets/work4.png';
 
 export const navLinks = ['home', 'about', 'skills', 'portfolio', 'contact'];
 
